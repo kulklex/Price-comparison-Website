@@ -28,14 +28,14 @@ app.prepare().then(() => {
 
   /** Function that gets the total count of product from search term */
 async function getSearchCount(searchTerm) {
-    const sql = `SELECT COUNT(*) FROM Product WHERE name LIKE '%${searchTerm}%'`;
+    const sql = `SELECT COUNT(*) FROM product WHERE name LIKE '%${searchTerm}%'`;
     let result = await db.query(sql);
     return result[0]["COUNT(*)"];
   }
   
 /** Function that searches for product with search term */
  async function search(searchTerm, numItems, offset) {
-    let sql = `SELECT * FROM Product WHERE name LIKE '%${searchTerm}%' `;
+    let sql = `SELECT * FROM product WHERE name LIKE '%${searchTerm}%' `;
   
     //Limit the number of results returned
     if (numItems !== undefined && offset !== undefined) {
@@ -86,7 +86,7 @@ async function getSearchCount(searchTerm) {
  server.get("/api/product/:productID", async (req, res) => {
     try {
       const product = await db.query(
-        `SELECT * FROM Product WHERE id=${req.params.productID}`
+        `SELECT * FROM product WHERE id=${req.params.productID}`
       );
       const results = {
         product,
@@ -106,10 +106,10 @@ async function getSearchCount(searchTerm) {
  server.get("/api/compare/:productID", async (req, res) => {
     try {
       const product = await db.query(
-        `SELECT * FROM Product WHERE id=${req.params.productID}`
+        `SELECT * FROM product WHERE id=${req.params.productID}`
       );
       const comparison = await db.query(
-        `SELECT * FROM Comparison WHERE product_id=${req.params.productID}`
+        `SELECT * FROM comparison WHERE product_id=${req.params.productID}`
       );
       const results = {
         product,

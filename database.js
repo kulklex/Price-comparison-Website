@@ -27,7 +27,7 @@ function query(sql, params) {
 
       connection.query(sql, params, (queryErr, results) => {
         connection.release(); // Releasing the connection
-
+        console.log("Connected to sql..")
         if (queryErr) {
           return reject(queryErr);
         }
