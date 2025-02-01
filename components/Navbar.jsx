@@ -38,15 +38,12 @@ export default function Navbar() {
         <Link href="/" className="text-sm md:text-lg bold">
           Home
         </Link>
-        <Link href="/about-us" className="text-sm md:text-lg bold">
-          About Us
-        </Link>
-        <Link href="/contact-us" className="text-sm md:text-lg bold">
-          Contact Us
+        <Link target="__blank" href="https://github.com/kulklex/Price-comparison-Website-FrontEnd/blob/main/Report%20(Price-Comparison%20Website).pdf" className="text-sm md:text-lg bold">
+          Project Report
         </Link>
       </div>
 
-      <Link href="/" className="bold text-2xl flex justify-around items-center">
+      <Link href="/" className="bold text-2xl flex justify-around items-center my-2">
         BudSpot
       </Link>
 

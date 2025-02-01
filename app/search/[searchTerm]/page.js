@@ -12,7 +12,7 @@ export default function page({ params }) {
     async function fetchData() {
       try {
         const res = await axios.get(
-          `http://localhost:5000/api/search?q=${encodeURIComponent(
+          `/api/search?q=${encodeURIComponent(
             params.searchTerm
           )}&numitems=20&offset=0`
         );

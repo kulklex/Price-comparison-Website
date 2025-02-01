@@ -17,8 +17,7 @@ export default function ProductItem({ params }) {
   useEffect(() => {
     async function fetchData() {
       try {
-        const res = await axios.get(
-          `http://localhost:5000/api/compare/${params.id}`
+        const res = await axios.get(`/api/compare/${params.id}`
         );
         const data = await res.data;
         setProduct(data?.results?.product[0]);
