@@ -13,11 +13,11 @@ export default function Home() {
       <section className="justify-center items-center py-2 mx-10 mt-4 p-4">
         <div className="relative grid container pt-2">
           <div className="px-4 m-4 text-gray-800">
-            <h2 className="text-lg">
+            <h2 className="text-xl flex justify-center items-center">
               Test out the features by making a simple search or clicking any of
               these popular brands below!
             </h2>
-            <div className="pt-2">
+            <div className="pt-3">
               <div className="grid grid-cols-2 md:grid-cols-8 md:justify-center items-center text-lg pb-2">
                 <Link href="/search/apple">
                   <button className={`${brandCard} p-4 m-4`}>Apple</button>
@@ -67,13 +67,9 @@ export default function Home() {
             />
 
             <h2 className="text-lg mt-8">
-              This project, inspired by Pricerunner, was developed as coursework
-              to showcase expertise in Enterprise Java, Multithreading, and
-              Spring Framework. It features an implementation of web scraping
-              using Selenium and Java, with data securely stored in an SQL
-              database. The backend is powered by a REST API built with
-              Express.js and SQL, seamlessly integrated with a modern Next.js
-              frontend.
+            This project was inspired by <span className='font-bold'>PriceRunner</span>, a popular price comparison website, and was developed as coursework to demonstrate expertise in <span className='font-bold'>Enterprise Java</span>, <span className='font-bold'>Multithreading</span>, and the <span className='font-bold'>Spring Framework</span>. It features advanced web scraping using <span className='font-bold'>Selenium</span> and <span className='font-bold'>Java</span>, with data securely stored in an <span className='font-bold'>SQL</span> database. 
+            To ensure efficient handling of large search results, pagination is implemented when more than 10 products are found.
+            The backend is powered by a <span className='font-bold'>REST API</span> built with <span className='font-bold'>Express.js</span>, seamlessly running within the <span className='font-bold'>Next.js</span> environment. By leveraging Next.js’s ability to handle both frontend rendering and API routes, this project delivers a smooth, full-stack experience with a modern and responsive user interface.
             </h2>
             <h2 className="text-lg mt-2">
               Explore the web scraping code here:{" "}
@@ -99,7 +95,7 @@ export default function Home() {
                 className="underline text-blue-500 hover:text-black"
                 href="https://github.com/kulklex/Price-comparison-Website/"
               >
-                Nextjs Frontend and Backend Code.
+                Nextjs Code.
               </a>
             </h2>
           </div>
