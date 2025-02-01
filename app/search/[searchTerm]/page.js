@@ -17,10 +17,10 @@ export default function page({ params }) {
           )}&numitems=20&offset=0`
         );
         const data = await res.data;
-        const count = data.results.count;
+        const count = data.count;
 
         // Set the search results inside a state
-        setSearchResults(data.results.data);
+        setSearchResults(data.data);
       } catch (error) {
         // Handle the error (show an error message)
         console.error("Error Fetching data", error);

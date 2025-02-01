@@ -20,8 +20,8 @@ export default function ProductItem({ params }) {
         const res = await axios.get(`/api/compare/${params.id}`
         );
         const data = await res.data;
-        setProduct(data?.results?.product[0]);
-        setComparison(data?.results?.comparison);
+        setProduct(data?.product[0]);
+        setComparison(data?.comparison);
       } catch (error) {
         // Handle the error (show an error message)
         console.error("Error Fetching data", error);
