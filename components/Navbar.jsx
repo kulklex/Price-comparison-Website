@@ -54,7 +54,7 @@ export default function Navbar() {
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
           onKeyDown={handleKeyDown}
-          className="block w-full rounded-md border border-gray-200 bg-white py-2.5 font-satoshi pl-5 pr-12 text-sm font-medium focus:border-blue focus:outline-none focus:ring-0"
+          className="block w-full rounded-md border border-gray-200 bg-white py-4 font-satoshi pl-5 pr-12 text-sm font-medium focus:border-blue focus:outline-none focus:ring-0"
         />
       </form>
     </div>
