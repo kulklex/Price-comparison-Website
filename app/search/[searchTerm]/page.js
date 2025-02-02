@@ -18,9 +18,10 @@ export default function Page({ params }) {
       setError(null);
 
       try {
-        const res = await axios.get(
-          `/api/pagination?q=${encodeURIComponent(params.searchTerm)}&page=${currentPage}&pageSize=${pageSize}`
-        );
+        const res = await axios.get(`/api/pagination`, {
+          params: { q: params.searchTerm, page: currentPage, pageSize }
+        });
+        
         
         setSearchResults(res.data.data);
         setTotalResults(res.data.totalCount);

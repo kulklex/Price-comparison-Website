@@ -20,7 +20,7 @@ export default function ProductItem({ params }) {
       setError(null);
 
       try {
-        const res = await axios.get(`/api/compare/${params.id}`);
+        const res = await axios.get(`/api/compare?id=${params.id}`);
         const data = res.data;
 
         setProduct(data?.product[0]);
@@ -85,7 +85,7 @@ export default function ProductItem({ params }) {
 
                     <button
                       className="border m-4 p-4 rounded-lg bg-blue-400 text-white"
-                      onClick={() => router.push(data?.url)}
+                      onClick={() => window.open(data?.url, "__blank")}
                     >
                       Visit Website
                     </button>
