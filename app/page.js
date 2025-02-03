@@ -64,11 +64,11 @@ export default function Home() {
 
           <div className="py-4">
             <h2 className="text-2xl flex justify-center items-center">
-              Test comparison!
+              Test comparison
             </h2>
 
             <div className="grid grid-cols-2 md:grid-cols-5 justify-center items-center text-lg p-2">
-              <Link href="/product/147">
+             <Link href="/product/147">
                 <button className={`${brandCard} p-1 m-4`}>Product 147</button>
               </Link>
 
@@ -94,7 +94,11 @@ export default function Home() {
               Explore popular brands!
             </h2>
 
-            <div className="grid grid-cols-2 md:grid-cols-8 md:justify-center items-center text-lg py-2">
+            <div className="grid grid-cols-2 md:grid-cols-6 md:justify-center items-center text-lg py-2">
+              <Link href="/product">
+                <button className={`${brandCard} p-1 m-4`}>All Products</button>
+              </Link>
+
               <Link href="/search/apple">
                 <button className={`${brandCard} p-4 m-4`}>Apple</button>
               </Link>

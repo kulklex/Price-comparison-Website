@@ -34,9 +34,9 @@ export default function Navbar() {
 
   return (
     <div className="block md:flex justify-around items-center px-8 py-2 mt-4 border-b">
-      <div id="nav" className="px-2 space-x-4 hidden md:block text-light">
-        <Link href="/" className="text-sm md:text-lg bold">
-          Home
+      <div id="nav" className="px-2 space-x-8 hidden md:block text-light">
+        <Link href="/product" className="text-sm md:text-lg bold">
+          Products
         </Link>
         <Link target="__blank" href="https://github.com/kulklex/Price-comparison-Website-FrontEnd/blob/main/Report%20(Price-Comparison%20Website).pdf" className="text-sm md:text-lg bold">
           Project Report
