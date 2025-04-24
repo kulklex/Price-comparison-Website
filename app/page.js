@@ -152,6 +152,26 @@ export default function Home() {
               listings.
             </h2>
             <h2 className="text-lg mt-2">
+              Explore the Java code here:{" "}
+              <a
+                target="__blank"
+                className="underline text-blue-500 hover:text-black"
+                href="https://github.com/kulklex/Price-Comparison-Website-Web-Scrapping-Code/"
+              >
+                Java Code.
+              </a>
+            </h2>
+            <h2 className="text-lg mt-2">
+              Explore the Node.js code here:{" "}
+              <a
+                target="__blank"
+                className="underline text-blue-500 hover:text-black"
+                href="https://github.com/kulklex/Price-Comparison-Website-REST-API/"
+              >
+                Node.js Code.
+              </a>
+            </h2>
+            <h2 className="text-lg mt-2">
               Explore the next.js code here:{" "}
               <a
                 target="__blank"
